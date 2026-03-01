@@ -1,0 +1,74 @@
+@use '../abstracts/mediaQuery' as *;
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--text-color);
+  padding: 1rem 0 0.6rem;
+  @include media-breakpoint-up {
+    padding: 2rem 0 1rem;
+  }
+  h1 {
+    line-height: 1;
+  }
+}
+
+.btn_theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 2rem;
+  height: 100%;
+  padding: 0 0 0 0.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-sizing: content-box;
+  span {
+    display: inline-block;
+  }
+  @include media-breakpoint-up {
+    width: 4rem;
+    height: 4rem;
+    padding: 0 0 0 0.4rem;
+  }
+}
+
+.logo,
+.menu,
+.btn_theme {
+  font-weight: 700;
+  font-size: 1.2rem;
+  @include media-breakpoint-up {
+    font-size: 1.4rem;
+  }
+}
+
+.menu {
+  position: relative;
+  padding: 0 1rem;
+  margin-left: auto;
+  & + * {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 40%;
+      background-color: var(--text-color);
+    }
+  }
+  @include media-breakpoint-up {
+    padding: 0 2rem;
+    & + * {
+      &::before {
+        content: '';
+      }
+    }
+  }
+}

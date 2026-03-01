@@ -1,0 +1,65 @@
+[
+  {
+    "projectKey": "hiveplatform",
+    "type": "반응형 (Desktop, Mobile)",
+    "people": "2명",
+    "contribution": "95%",
+    "tech": "Nuxt3.js, Pinia, i18n, Swiper.js",
+    "language": "KO / EN",
+    "period": "2024.08.20~2024.09.24 (총 23md)"
+  },
+  {
+    "projectKey": "thestarlight",
+    "type": "반응형 (Desktop, Mobile)",
+    "people": "1명",
+    "contribution": "100%",
+    "tech": "GSAP, ScrollTrigger, Swiper.js, aos.js",
+    "language": "KO",
+    "period": "2025.04.14~2025.04.30 (총 23md)"
+  },
+  {
+    "projectKey": "gc",
+    "type": "적응형 (Desktop, Mobile)",
+    "people": "3명",
+    "contribution": "50%",
+    "tech": "GSAP, ScrollTrigger, Swiper.js, aos.js, gulp, bootstrap5",
+    "language": "KO / EN",
+    "period": "2022.08.01~2022.11.30 (총 43md)"
+  },
+  {
+    "projectKey": "cau",
+    "type": "적응형 (Desktop, Mobile)",
+    "people": "3명",
+    "contribution": "80%",
+    "tech": "gulp, bootstrap4",
+    "language": "KO",
+    "period": "2021.06.07~2022.04.30 "
+  },
+  {
+    "projectKey": "event",
+    "type": "반응형 (Desktop, Mobile), 모바일 웹, 적응형 (Desktop, Tablet, Mobile)",
+    "people": "1명",
+    "contribution": "100%",
+    "tech": "-",
+    "language": "KO / EN / JA / ZH-HANT / ZH-HANS / FR / DE / RU / ES / PT / ID / TH / VI / TR / IT / AR",
+    "period": "상시 및 기간 한정 이벤트 "
+  },
+  {
+    "projectKey": "admin",
+    "type": "Desktop",
+    "people": "1명",
+    "contribution": "100%",
+    "tech": "gulp, bootstrap5, chart.js",
+    "language": "KO / EN",
+    "period": "2022.11.30~2022.12.30 (총 13md)"
+  },
+  {
+    "projectKey": "etc",
+    "type": "반응형 (Desktop, Tablet, Mobile)",
+    "people": "3명",
+    "contribution": "80%",
+    "tech": "GSAP",
+    "language": "KO",
+    "period": "2023.01.25~2023.01.27 (총 2md)"
+  }
+]

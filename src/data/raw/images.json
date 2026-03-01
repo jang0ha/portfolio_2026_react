@@ -1,0 +1,74 @@
+[
+  {
+    "projectKey": "hiveplatform",
+    "device": "mobile",
+    "src": "/images/project/hiveplatform/mobile.png",
+    "alt": "hiveplatform visual mobile"
+  },
+  {
+    "projectKey": "hiveplatform",
+    "device": "pc",
+    "src": "/images/project/hiveplatform/pc.png",
+    "alt": "hiveplatform visual pc"
+  },
+  {
+    "projectKey": "thestarlight",
+    "device": "mobile",
+    "src": "/images/project/thestarlight/mobile.png",
+    "alt": "thestarlight visual mobile"
+  },
+  {
+    "projectKey": "thestarlight",
+    "device": "pc",
+    "src": "/images/project/thestarlight/pc.png",
+    "alt": "thestarlight visual pc"
+  },
+  {
+    "projectKey": "gc",
+    "device": "mobile",
+    "src": "/images/project/gc/mobile.png",
+    "alt": "gc visual mobile"
+  },
+  {
+    "projectKey": "gc",
+    "device": "pc",
+    "src": "/images/project/gc/pc.png",
+    "alt": "gc visual pc"
+  },
+  {
+    "projectKey": "cau",
+    "device": "mobile",
+    "src": "/images/project/cau/mobile.png",
+    "alt": "cau visual mobile"
+  },
+  {
+    "projectKey": "cau",
+    "device": "pc",
+    "src": "/images/project/cau/pc.png",
+    "alt": "cau visual pc"
+  },
+  {
+    "projectKey": "event",
+    "device": "pc",
+    "src": "/images/project/event/pc.png",
+    "alt": "event visual pc"
+  },
+  {
+    "projectKey": "admin",
+    "device": "pc",
+    "src": "/images/project/admin/pc.png",
+    "alt": "admin visual pc"
+  },
+  {
+    "projectKey": "etc",
+    "device": "mobile",
+    "src": "/images/project/etc/mobile.png",
+    "alt": "etc visual mobile"
+  },
+  {
+    "projectKey": "etc",
+    "device": "pc",
+    "src": "/images/project/etc/pc.png",
+    "alt": "etc visual pc"
+  }
+]

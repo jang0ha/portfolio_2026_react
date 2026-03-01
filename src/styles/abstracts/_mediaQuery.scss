@@ -1,0 +1,6 @@
+//미디어 쿼리 769 이상 small laptop이상
+@mixin media-breakpoint-up {
+  @media (min-width: 769px) {
+    @content;
+  }
+}

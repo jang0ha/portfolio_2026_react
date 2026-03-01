@@ -1,0 +1,10 @@
+@use '../abstracts/mediaQuery' as *;
+
+.footer_block {
+  height: auto;
+}
+.copyright {
+  padding: 1rem 0;
+  font-size: 1rem;
+  border-top: 1px solid var(--text-color);
+}

@@ -1,0 +1,17 @@
+/* 아이콘 스타일 정의 */
+$icon-list: (
+anchor-diagonal:
+"%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.728 3.331 2 9.059l.941.941L8.67 4.272v5.049H10V2H2.68v1.331z' fill='currentColor'/%3E%3C/svg%3E",
+    arrow-down: //네비게이션 : 아래 화살표
+    "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M1 4.232 2.21 3 6 6.722 9.79 3 11 4.232 6 9.14z' fill='%23FFF'/%3E%3C/svg%3E",
+    arrow-short: //네비게이션 : 짧은 좌우 화살표 | 좌
+    "%3Csvg width='12' height='12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.1 5.511H1v1.331h8.1l-3.57 3.57.942.941 5.176-5.177L6.472 1l-.941.941z' fill='{{color}}'/%3E%3C/svg%3E",
+    arrow-long: //슬라이드 외 컨텐츠, 긴 좌우 화살표 | 좌
+    "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 8'%3E%3Cpath d='M3.723 8 0 3.98 3.723 0l1.16 1.118-1.936 2.127H16v1.623H2.947l1.936 2.039z' fill='{{color}}' fill-rule='evenodd'/%3E%3C/svg%3E",
+    notice: // gnb > add 확성기
+    "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cg fill='none'%3E%3Cpath d='M5.307 3.154v9.188H2.829A2.382 2.382 0 0 1 .45 9.96V5.536a2.382 2.382 0 0 1 2.38-2.382h2.477zm9.815 6.878V5.438h1.237a1.188 1.188 0 0 1 1.191 1.19v2.203a1.188 1.188 0 0 1-1.191 1.191l-1.237.01z' fill='%235782ED'/%3E%3Cpath d='M6.367 17.258a1.122 1.122 0 0 1-1.487-.552l-2.005-4.38h2.461l1.579 3.448c.257.561.012 1.225-.548 1.484z' fill='%235782ED'/%3E%3Cpath d='m11.88 14.869-6.564-2.547V3.157L11.88.611a2.382 2.382 0 0 1 3.242 2.221v9.815a2.382 2.382 0 0 1-3.242 2.222z' fill='%23D5DFF7'/%3E%3C/g%3E%3C/svg%3E",
+    close: //x버튼
+    '%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Cdefs%3E%3Cfilter id="a" width="115.2%25" height="119%25" x="-7.6%25" y="-8.3%25" filterUnits="objectBoundingBox"%3E%3CfeOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/%3E%3CfeGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/%3E%3CfeColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/%3E%3CfeMerge%3E%3CfeMergeNode in="shadowMatrixOuter1"/%3E%3CfeMergeNode in="SourceGraphic"/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Cg fill="{{color}}" filter="url(%23a)" transform="translate(-173 -7)"%3E%3Cpath d="m194.1 15-5.1 5.1-5.1-5.1-.9.9 5.1 5.1-5.1 5.1.9.9 5.1-5.1 5.1 5.1.9-.9-5.1-5.1 5.1-5.1z"/%3E%3C/g%3E%3C/svg%3E',
+		theme: //라이트&다크모드
+		"%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M277.333 405.333v85.333h-42.667v-85.333zm99.346-58.824l60.34 60.34l-30.17 30.17l-60.34-60.34zm-241.359 0l30.17 30.17l-60.34 60.34l-30.17-30.17zM256 139.353c64.422 0 116.647 52.224 116.647 116.647c0 64.422-52.225 116.647-116.647 116.647A116.427 116.427 0 0 1 139.352 256c0-64.423 52.225-116.647 116.648-116.647m0 42.666c-40.859 0-73.981 33.123-73.981 74.062a73.76 73.76 0 0 0 21.603 52.296c13.867 13.867 32.685 21.64 52.378 21.603zm234.666 52.647v42.667h-85.333v-42.667zm-384 0v42.667H21.333v-42.667zM105.15 74.98l60.34 60.34l-30.17 30.17l-60.34-60.34zm301.7 0l30.169 30.17l-60.34 60.34l-30.17-30.17zM277.332 21.333v85.333h-42.667V21.333z'/%3E%3C/svg%3E"
+);

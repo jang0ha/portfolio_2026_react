@@ -1,0 +1,122 @@
+[
+  {
+    "projectKey": "hiveplatform",
+    "text": "Nuxt.js SSR 환경에서 글로벌 서비스 웹사이트 구축"
+  },
+  {
+    "projectKey": "hiveplatform",
+    "text": "브라우저 언어 감지 기반 i18n 구현 (한/영 콘텐츠 분기, 언어별 URL 라우팅)→ JSON 파일 기반 데이터 바인딩 / 렌더링"
+  },
+  {
+    "projectKey": "hiveplatform",
+    "text": "컴포넌트 기반 아키텍처 설계 및 SCSS 모듈화를 통한 확장 가능한 스타일 시스템 구축"
+  },
+  {
+    "projectKey": "hiveplatform",
+    "text": "다국어 환경에서의 텍스트 오버플로우, 레이아웃 깨짐 등 UI 이슈 선제 대응"
+  },
+  {
+    "projectKey": "hiveplatform",
+    "text": "6개 페이지 구조 설계 및 외부 서비스 연동 (브라우저/디바이스 언어 기반 자동 분기)"
+  },
+  {
+    "projectKey": "hiveplatform",
+    "text": "크로스 브라우징 테스트 및 검증 (iOS 16 Safari, Android 12 Chrome)"
+  },
+  {
+    "projectKey": "thestarlight",
+    "text": "GSAP ScrollTrigger, Swiper.js, AOS, CSS Keyframes를 활용한 스크롤 기반 인터랙티브 브랜드 사이트 구현"
+  },
+  {
+    "projectKey": "thestarlight",
+    "text": "섹션 핀(pin), 타이밍 제어, Fade/Slide/Fixed 패널 전환을 조합한 시네마틱 스크롤 경험 설계"
+  },
+  {
+    "projectKey": "thestarlight",
+    "text": "모바일 환경 최적화: 스크롤 중심 UX를 Swiper 기반 터치 제스처 UI로 재설계하여 사용성 개선"
+  },
+  {
+    "projectKey": "thestarlight",
+    "text": "반응형 레이아웃 및 모션 성능 최적화 (iOS 14.7 Safari, Android 14 Chrome 검증)"
+  },
+  {
+    "projectKey": "thestarlight",
+    "text": "**배포 전 내부 기획 변경으로 인해 스크롤 및 다수 애니메이션 삭제, 페이지 구조 변경 등 현 버전으로 릴리즈 되었습니다."
+  },
+  {
+    "projectKey": "gc",
+    "text": "GC 녹십자그룹 채용 사이트 리뉴얼 프로젝트 (외부 협력사 협업)"
+  },
+  {
+    "projectKey": "gc",
+    "text": "PL(Project Lead)로서 산출물 검수, 품질 관리 및 핵심 인터랙션 기능 직접 구현"
+  },
+  {
+    "projectKey": "gc",
+    "text": "GSAP ScrollTrigger 기반 SVG 일러스트 애니메이션 구현 (스크롤 진행도와 동기화)"
+  },
+  {
+    "projectKey": "gc",
+    "text": "콘텐츠 전달 우선순위와 사용자 동선을 고려한 UX 중심의 페이지 구조 설계"
+  },
+  {
+    "projectKey": "cau",
+    "text": "중앙대학교 미래교육원(원격미래교육원) 사이트 리뉴얼 (웹 접근성 준수)"
+  },
+  {
+    "projectKey": "cau",
+    "text": "WCAG 2.0 기준 적용: 시맨틱 마크업, 대체 텍스트, 키보드 접근성, 명도 대비 등 구현"
+  },
+  {
+    "projectKey": "cau",
+    "text": "2차 웹 접근성 심사 통과 (영상 콘텐츠 제외한 전체 사이트)"
+  },
+  {
+    "projectKey": "event",
+    "text": "게임별 최소 지원 OS 버전을 고려한 레거시 브라우저 대응 (CSS/JavaScript 호환성 조정)"
+  },
+  {
+    "projectKey": "event",
+    "text": "인게임 이벤트, 확률 공개, 메일링 페이지 등 게임 운영 관련 웹 콘텐츠 제작 및 운영"
+  },
+  {
+    "projectKey": "event",
+    "text": "사내 마크업 가이드 및 코딩 컨벤션 준수를 통한 코드 일관성 확보"
+  },
+  {
+    "projectKey": "event",
+    "text": "재사용 가능한 UI 컴포넌트 템플릿 설계 (룰렛, 공통 팝업, 탭 스크롤 등) 및 개발 생산성 향상 기여"
+  },
+  {
+    "projectKey": "event",
+    "text": "최대 16개 언어 지원 환경에서도 UI 안정성 유지 (텍스트 오버플로우, 레이아웃 유연성 고려)"
+  },
+  {
+    "projectKey": "event",
+    "text": "** 본 이미지는 컴투스플랫폼 재직 당시 작업한 게임 리스트들이며 본 이미지에 대한 저작권은 컴투스에 있습니다."
+  },
+  {
+    "projectKey": "admin",
+    "text": "다국어(multilingual) 지원 Samsung Galaxy 스펙 관리 CMS 리뉴얼 및 고도화"
+  },
+  {
+    "projectKey": "admin",
+    "text": "Samsung One UI 디자인 가이드라인 기반 어드민 전체 UI 개선 및 신규 기능 화면 설계"
+  },
+  {
+    "projectKey": "admin",
+    "text": "레거시 코드 구조 유지 상태에서 점진적 리팩토링을 통한 안정성 및 유지보수성 확보"
+  },
+  {
+    "projectKey": "admin",
+    "text": "샘플 페이지 제작 및 공통/개별 수정 영역 정의를 통한 개발자와의 효율적인 커뮤니케이션"
+  },
+  {
+    "projectKey": "etc",
+    "text": "Zendesk SaaS 플랫폼 구조 분석 (레이아웃, 클래스 규칙, DOM 제약사항) 및 커스터마이징 전략 수립"
+  },
+  {
+    "projectKey": "etc",
+    "text": "SaaS 환경 제약을 고려한 공통 UI 패턴 정의 및 운영 가능한 디자인 시스템 구축 (Kakao Enterprise 고객지원센터)"
+  }
+]

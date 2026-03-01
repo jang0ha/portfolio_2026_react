@@ -1,0 +1,37 @@
+[
+  {
+    "projectKey": "hiveplatform",
+    "sort": "Nuxt.js / Frontend",
+    "title": "하이브 플랫폼 웹사이트"
+  },
+  {
+    "projectKey": "thestarlight",
+    "sort": "GSAP Scroll Animation",
+    "title": "더 스타라이트 브랜드사이트"
+  },
+  {
+    "projectKey": "gc",
+    "sort": "GSAP Scroll Animation",
+    "title": "GC 녹십자 채용 사이트"
+  },
+  {
+    "projectKey": "cau",
+    "sort": "웹 접근성 / Web Accessibility",
+    "title": "중앙대 원격미래교육원 사이트"
+  },
+  {
+    "projectKey": "event",
+    "sort": "Interactive Event Page",
+    "title": "게임 이벤트 페이지"
+  },
+  {
+    "projectKey": "admin",
+    "sort": "CMS / Admin Panel",
+    "title": "삼성 갤럭시 SPEC 관리 사이트"
+  },
+  {
+    "projectKey": "etc",
+    "sort": "Zendesk SaaS Platform",
+    "title": "카카오 엔터프라이즈 고객지원"
+  }
+]

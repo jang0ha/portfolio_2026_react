@@ -1,0 +1,52 @@
+/* 버튼 스타일 정의 */
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mediaQuery' as *;
+
+%btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 0;
+  background: none;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-color);
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+// //오른쪽 화살표 있는 버튼
+// .btn_link {
+//     &::after {
+//         content: "";
+//         display: block;
+//         background: url("#{svg-image(arrow-long)}") no-repeat center/contain;
+//         transform: rotate(180deg);
+//     }
+// }
+
+//아이콘 과 함께있는 버튼
+%anchor {
+  @extend %btn;
+  &::hover {
+    &::after {
+      transform: rotate(10deg);
+    }
+  }
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    /* Safari 대응 */
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    transition: all 0.3s;
+  }
+}

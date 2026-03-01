@@ -1,0 +1,66 @@
+/* 공통 스타일 정의 */
+// @use "variables" as *;
+@use "mixins" as *;
+@use "mediaQuery" as *;
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &_start {
+        display: flex;
+        align-items: center;
+    }
+
+    &_end {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &_item {
+        display: block;
+        width: 100%;
+    }
+}
+
+//숨김
+.hide {
+  @include hide;
+}
+//모바일에서 보임
+.d_md_none {
+    display: block;
+    @include media-breakpoint-up {
+        display: none !important; 
+    }
+}
+.d_inline_md_none {
+    display: inline-block;
+    @include media-breakpoint-up {
+        display: none !important;
+    }
+}
+//웹에서 보임
+.d_md_block {
+    display: none;
+    @include media-breakpoint-up {
+        display: block !important;
+    }
+}
+.d_inline_md_block {
+    display: none;
+    @include media-breakpoint-up {
+        display: inline-block !important;
+    }
+}
+// //아이콘 클래스
+// @include generate-icon-classes;
+
+// //텍스트 정의
+// // @each $name, $value in $text-colors {
+// //     .text_#{$name} {
+// //         color: $value !important;
+// //     }
+// // }

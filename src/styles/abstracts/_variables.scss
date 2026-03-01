@@ -1,0 +1,41 @@
+/* 변수 정의 */
+// $cdn: "../assets";
+// $cdn: "https://hive-fn.qpyou.cn/markup/img/blockchain/2024/assets";
+
+//색상 정의
+$blue: #1277ff;
+$red: #e21212;
+$gray: #646777;
+$white: #fff;
+$black: #252525;
+
+$light-theme: (
+  background-color: #fafafa,
+  background-inversion-color: #141414,
+  text-color: #525252,
+  gray-color: #a3a3a3,
+  primary-color: #72b4da56,
+  border-color: #e5e5e5,
+);
+
+$dark-theme: (
+  background-color: #141414,
+  background-inversion-color: #fafafa,
+  text-color: #dddbdb,
+  gray-color: #a8a8a8dd,
+  primary-color: #ffee0063,
+  border-color: #8b8b8b,
+);
+
+//radius
+$radius-sm: 1.6rem;
+$radius-md: 2.4rem;
+$radius-lg: 4rem;
+
+// 백그라운드로 쓸때 변수
+$svg-background: 'data:image/svg+xml;charset=utf8,';
+//  background: url("data:image/svg+xml,#{svg-image(icon-hive-platform, fff)}") no-repeat center / 100% auto;
+
+//헤더
+$header-pc-height: 7.1rem;
+$header-mobile-height: 5.7rem; // 위 아래 공백 포함 전체 높이 (실 높이는 5.6rem)

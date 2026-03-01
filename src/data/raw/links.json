@@ -1,0 +1,48 @@
+[
+  {
+    "projectKey": "hiveplatform",
+    "label": "Website",
+    "url": "https://hiveplatform.ai/"
+  },
+  {
+    "projectKey": "hiveplatform",
+    "label": "Notion",
+    "url": "https://jang0ha.notion.site/2fc12b81902a819fbef9e3b52d4cd807?source=copy_link"
+  },
+
+  {
+    "projectKey": "thestarlight",
+    "label": "Website",
+    "url": "https://www.thestarlight.co.kr/"
+  },
+  {
+    "projectKey": "thestarlight",
+    "label": "Notion",
+    "url": "https://jang0ha.notion.site/2fc12b81902a8116b822d4dd00f15652?source=copy_link"
+  },
+  {
+    "projectKey": "gc",
+    "label": "Website",
+    "url": "https://recruit.gccorp.com/kor/main"
+  },
+  {
+    "projectKey": "cau",
+    "label": "Website",
+    "url": "https://emecca.cau.ac.kr/main/index.jsp"
+  },
+  {
+    "projectKey": "admin",
+    "label": "Notion",
+    "url": "https://jang0ha.notion.site/SPEC-CMS-9adcde2a1c534787902f65db87c3d4a9?source=copy_link"
+  },
+  {
+    "projectKey": "etc",
+    "label": "markup page",
+    "url": "https://kakaoenterprize.netlify.app/pagelist.html"
+  },
+  {
+    "projectKey": "etc",
+    "label": "zendesk website",
+    "url": "https://help.kakaoenterprise.com/hc/ko"
+  }
+]

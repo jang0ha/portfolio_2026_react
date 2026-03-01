@@ -1,0 +1,34 @@
+/* 공통 기능 정의 */
+@use "../components/icons" as *;
+
+// < 는 %3C 로, > 는 %3E, # 대신 %23 로 치환
+// 문자열 발생을 바꾸는 함수
+@function str-replace($string, $search, $replace) {
+    $index: str-index($string, $search);
+    @if $index {
+        $before: str-slice($string, 1, $index - 1);
+        $after: str-slice($string, $index + str-length($search));
+        @return $before + $replace + $after;
+    }
+    @return $string;
+}
+// SVG 데이터를 가져와서 색상을 바꾸는 기능
+@function svg-image($icon-name) {
+  $svg: map-get($icon-list, $icon-name);
+
+    @if $svg == null {
+        @warn "아이콘 못찾아요 Icon = #{$icon-name}.";
+        @return null;
+    }
+
+    // SVG에 맞게 색상을 인코딩
+    //$encoded-color: "%23#{$color}";
+    //$color-replaced-svg: str-replace($svg, "{{color}}", $encoded-color);
+
+    // 교체를 확인하기 위한 디버그 출력
+    // @warn "컬러값이 교체됬는지 확인해보자 >> Color-replaced SVG: #{$color-replaced-svg}";
+
+    // 최종 리턴
+    //@return "data:image/svg+xml;charset=UTF-8," + $color-replaced-svg;
+		@return "data:image/svg+xml;charset=UTF-8," + $svg;
+}
