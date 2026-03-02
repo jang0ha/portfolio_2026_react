@@ -7,16 +7,6 @@ html {
   font-size: 62.5%;
 }
 
-// IE에서만 루트 요소 폰트 사이즈를 절댓값 10px로 고정
-@media screen and (min-width: 0\0) {
-
-  /* IE 9, IE 10, IE 11 */
-  :root,
-  html {
-    font-size: 10px;
-  }
-}
-
 /*
 * 다크, 라이트 테마 변수
 */
