@@ -1,12 +1,15 @@
 /* 레이아웃 스타일 정의 */
 @use '../abstracts/index' as *;
 @use '../base/index' as *;
+@use '../abstracts/mediaQuery' as *;
 
 html {
   font-size: 62.5%;
 }
+
 // IE에서만 루트 요소 폰트 사이즈를 절댓값 10px로 고정
 @media screen and (min-width: 0\0) {
+
   /* IE 9, IE 10, IE 11 */
   :root,
   html {
@@ -23,6 +26,7 @@ html {
     --#{$key}: #{$value};
   }
 }
+
 //시스템 다크모드 기본값
 @media (prefers-color-scheme: dark) {
   :root {
@@ -31,6 +35,7 @@ html {
     }
   }
 }
+
 /* 사용자가 직접 선택한 테마 */
 :root[data-theme='light'] {
   @each $key, $value in $light-theme {
@@ -43,11 +48,13 @@ html {
     --#{$key}: #{$value};
   }
 }
+
 html,
 body {
   width: 100%;
   height: 100%;
 }
+
 body {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
@@ -65,6 +72,7 @@ body {
     background-color 0.3s,
     color 0.3s,
     border-color 0.3s;
+
   &.opened {
     overflow-y: hidden;
   }
@@ -77,9 +85,11 @@ body {
   min-height: calc(var(--vh, 1vh) * 100);
   min-height: 100dvh;
 }
+
 main {
   flex: 1;
-  > * {
+
+  >* {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -87,11 +97,13 @@ main {
     width: 100%;
     min-height: calc(100vh - $header-mobile-height - 3.5rem);
     padding: 4rem 0;
+
     @include media-breakpoint-up {
       min-height: calc(100vh - $header-pc-height - 3.5rem);
     }
   }
 }
+
 .container {
   display: flex;
   flex-direction: column;

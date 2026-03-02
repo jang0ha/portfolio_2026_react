@@ -1,10 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import '../styles/pages/_HomePages.scss'
-
+import homeStyles from '../styles/pages/_HomePages.module.scss'
+import { useProjects } from '../hooks/useProjects'
+import { usePageSeo } from '../hooks/usePageSeo'
 const slides = [
   { title: 'Think.', desc: 'Think in Structure' },
   { title: 'Search.', desc: 'Search for Better Markup' },
@@ -13,10 +14,24 @@ const slides = [
   { title: 'Solved.', desc: 'Ship a Stable Interface' },
 ];
 
+
 export default function HomePage() {
+
+  const { allProjects } = useProjects()
+  const groupedProjects = allProjects.reduce((acc, project) => {
+    if (!acc[project.sort]) acc[project.sort] = []
+    acc[project.sort].push(project)
+    return acc
+  }, {})
+
+  usePageSeo({
+    title: 'Home – Jang Youngha Portfolio',
+    description: '포트폴리오 메인 페이지입니다. 프로젝트와 데이터 중심 설계 구조를 한 눈에 볼 수 있습니다.',
+  })
+
   return (
-    <div className="index_wrap">
-      <section className="inform_wrap container">
+    <div className={homeStyles.index_wrap}>
+      <section className={`${homeStyles.inform_wrap} container`}>
         <a
           href="https://github.com/jang0ha"
           target="_blank"
@@ -26,9 +41,9 @@ export default function HomePage() {
           https://github.com/jang0ha
         </a>
       </section>
-      <section className="hero_wrap container">
-        <h2 className="main_title">Portfolio.</h2>
-        <article className="hero_swiper_wrap">
+      <section className={`${homeStyles.hero_wrap} container`}>
+        <h2 className={homeStyles.main_title}>Portfolio.</h2>
+        <article className={homeStyles.hero_swiper_wrap}>
           <Swiper
             modules={[EffectFade, Autoplay]}
             effect="fade"
@@ -41,21 +56,32 @@ export default function HomePage() {
           >
             {slides.map((slide, idx) => (
               <SwiperSlide key={idx} className="swiper-slide">
-                <h3 className="hero_title">{slide.title}</h3>
-                <p className="hero_desc">{slide.desc}</p>
+                <h3 className={homeStyles.hero_title}>{slide.title}</h3>
+                <p className={homeStyles.hero_desc}>{slide.desc}</p>
               </SwiperSlide>
             ))}
           </Swiper>
         </article>
       </section>
-      <section className='project_wrap container'>
-            <ul className="project_list">
-              <li className="project_sort">
-                <Routes>
-                  <Route path=""></Route>
-                </Routes>
-              </li>
-            </ul>
+      <section className={`${homeStyles.project_wrap} container`}>
+        <ul className={`${homeStyles.project_list}`}>
+          {Object.entries(groupedProjects).map(([sort, list]) => (
+            <li key={sort} className={`${homeStyles.project_sort}`}>
+              <span>{sort}</span>
+              <div className={`${homeStyles.projects}`}>
+                {list.map((project) => (
+                  <Link
+                    key={project.key}
+                    to={`/project/${project.key}`}
+                    className={`${homeStyles.project_link}`}
+                  >
+                    {project.title}
+                  </Link>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );
