@@ -21,11 +21,14 @@ export function useResponsiveImage(images) {
         }
     }, [images])
 
-    const image = !images
+    const pcImage = Array.isArray(images) ? images.find(img => img.device === 'pc') : images?.pc
+    const mobileImage = Array.isArray(images) ? images.find(img => img.device === 'mobile') : images?.mobile
+
+    const image = !images || (Array.isArray(images) && images.length === 0)
         ? null
         : isMobile
-            ? images.mobile || images.pc
-            : images.pc || images.mobile
+            ? mobileImage || pcImage
+            : pcImage || mobileImage
 
     return { image }
 }

@@ -7,7 +7,6 @@ import { usePageSeo } from '../hooks/usePageSeo'
 
 gsap.registerPlugin(ScrollTrigger)
 
-
 const aboutDesc = [
   {
     area: 'intro',
@@ -37,12 +36,13 @@ const aboutDesc = [
       React.js활용해서 실제 서비스처럼 동작하는 구조를 목표로 제작했습니다.
     `,
   },
-];
+]
 
 const stackItems = [
   {
     label: 'Data Modeling',
-    desc: 'Excel 기반 원천 데이터를 가공하고, projectKey를 기준으로 시트 간 관계를 정의하여 중복 없이 관리 가능한 구조로 설계했습니다.',
+    desc: `[Nuxt.js]Excel 기반 원천 데이터를 가공하고, projectKey를 기준으로 시트 간 관계를 정의하여 중복 없이 관리 가능한 구조로 설계했습니다 
+			-> [React.js]api 주소를 받아와서 데이터를 동적으로 로드합니다.`,
   },
   {
     label: 'Data Layer',
@@ -57,8 +57,7 @@ const stackItems = [
     유지보수가 용이한 구조로 개선했습니다.
     이후 빌드 및 정적 배포까지 완료하여 실제 서비스 가능한 형태로 퍼블리싱했습니다.`,
   },
-];
-
+]
 
 export default function AboutPage() {
   const sectionRef = useRef(null)
@@ -67,7 +66,8 @@ export default function AboutPage() {
 
   usePageSeo({
     title: 'About – Jang Youngha Portfolio',
-    description: '장영하의 작업 방식과 기술적 접근 방식을 소개하는 About 페이지입니다.',
+    description:
+      '장영하의 작업 방식과 기술적 접근 방식을 소개하는 About 페이지입니다.',
   })
 
   useEffect(() => {
@@ -136,7 +136,9 @@ export default function AboutPage() {
             markers: false,
             onUpdate(self) {
               if (scrollText) {
-                gsap.set(scrollText, { autoAlpha: self.progress > 0.95 ? 0 : 1 })
+                gsap.set(scrollText, {
+                  autoAlpha: self.progress > 0.95 ? 0 : 1,
+                })
               }
               if (endingText) {
                 gsap.set(endingText, { autoAlpha: self.progress > 0.1 ? 1 : 0 })
@@ -205,7 +207,9 @@ export default function AboutPage() {
   return (
     <>
       <section className={`${aboutStyles.about_wrap}`}>
-        <p ref={scrollTextRef} className={`${aboutStyles.scroll_text}`}>Scroll</p>
+        <p ref={scrollTextRef} className={`${aboutStyles.scroll_text}`}>
+          Scroll
+        </p>
         {aboutDesc.map((about) => (
           <article
             className={`${aboutStyles.about_article} container ${about.area}`}
@@ -215,7 +219,10 @@ export default function AboutPage() {
             <p>{about.text}</p>
           </article>
         ))}
-        <article ref={sectionRef} className={`${aboutStyles.portfolio_structure} container`}>
+        <article
+          ref={sectionRef}
+          className={`${aboutStyles.portfolio_structure} container`}
+        >
           <div className={aboutStyles.inner}>
             <h2 className={aboutStyles.structure_title}>Portfolio Structure</h2>
             <div className={aboutStyles.stack_diagram}>
@@ -224,25 +231,37 @@ export default function AboutPage() {
                   <div
                     key={index}
                     className={aboutStyles.stack_card}
-                    data-card="stack" // GSAP용 선택자
+                    data-card='stack' // GSAP용 선택자
                   >
                     <strong className={aboutStyles.label}>
                       {item.label}
-                      {item.api && <span className={aboutStyles.api_badge}>API</span>}
+                      {item.api && (
+                        <span className={aboutStyles.api_badge}>API</span>
+                      )}
                     </strong>
 
                     <p className={aboutStyles.desc}>{item.desc}</p>
-                    {item.subDesc && <p className={aboutStyles.desc}>{item.subDesc}</p>}
+                    {item.subDesc && (
+                      <p className={aboutStyles.desc}>{item.subDesc}</p>
+                    )}
                     <span className={aboutStyles.number}>0{index + 1}</span>
 
                     {item.code && (
-                      <a href={item.code} target="_blank" className={aboutStyles.code_link}>
+                      <a
+                        href={item.code}
+                        target='_blank'
+                        className={aboutStyles.code_link}
+                      >
                         View Code →
                       </a>
                     )}
                     <br />
                     {item.codeAPI && (
-                      <a href={item.codeAPI} target="_blank" className={aboutStyles.code_link}>
+                      <a
+                        href={item.codeAPI}
+                        target='_blank'
+                        className={aboutStyles.code_link}
+                      >
                         View Code API →
                       </a>
                     )}
@@ -250,22 +269,35 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
-
           </div>
         </article>
       </section>
-      <section ref={endingTextRef} className={`${aboutStyles.mop_wrap} container`}>
+      <section
+        ref={endingTextRef}
+        className={`${aboutStyles.mop_wrap} container`}
+      >
         <p className={aboutStyles.ending_text}>
-          이 포트폴리오는 4년간의 실무 경험을 바탕으로 <strong>확장 가능한 데이터 구조와 컴포넌트 기반 설계</strong>를 적용한 작업물입니다.<br /><br />
-
-          React.js를 활용한 사이트 제작 경험을 통해 데이터 흐름과 구조 설계의 중요성을 배웠으며, 이를
-          바탕으로 확장 가능한 포트폴리오 시스템을 구축했습니다.<br /><br />
-
-          웹 표준, 접근성, 성능 최적화를 기반으로 실무에서 요구되는 프론트엔드 개발 역량을 갖추고
-          있습니다.
+          이 포트폴리오는 4년간의 실무 경험을 바탕으로{' '}
+          <strong>확장 가능한 데이터 구조와 컴포넌트 기반 설계</strong>를 적용한
+          작업물입니다.
+          <br />
+          <br />
+          React.js를 활용한 사이트 제작 경험을 통해 데이터 흐름과 구조 설계의
+          중요성을 배웠으며, 이를 바탕으로 확장 가능한 포트폴리오 시스템을
+          구축했습니다.
+          <br />
+          <br />웹 표준, 접근성, 성능 최적화를 기반으로 실무에서 요구되는
+          프론트엔드 개발 역량을 갖추고 있습니다.
         </p>
-        <Link to="https://jang0ha.notion.site/5edc3ee7d6194f02a8e9756bf07c0110?source=copy_link" target='_blank' title='프로젝트 노션으로 새창이동' className={`${aboutStyles.btn_more}`}>더 많은 정보 확인하러 가기</Link>
+        <Link
+          to='https://jang0ha.notion.site/5edc3ee7d6194f02a8e9756bf07c0110?source=copy_link'
+          target='_blank'
+          title='프로젝트 노션으로 새창이동'
+          className={`${aboutStyles.btn_more}`}
+        >
+          더 많은 정보 확인하러 가기
+        </Link>
       </section>
     </>
-  );
+  )
 }
